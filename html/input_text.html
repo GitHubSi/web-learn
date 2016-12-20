@@ -1,0 +1,41 @@
+<doctype html>
+<html lang="ch">
+	<head>
+		<meta charset="UTF-8" />
+		<title>input美化</title>
+		<style>
+			*:focus {
+				outline: none;
+			}
+			
+			.input-name label {
+				width:120px;
+				display: inline-block;
+				float:left;
+				line-height:30px;
+				height:30px;
+			}
+			
+			.input-name input[type=text] {
+				width:220px;
+				height:30px;
+				padding:3px 8px;
+				border-radius:5px;
+				-webkit-transition: padding 0.25s;
+				transition: width 0.25s;
+			}
+			
+			.input-name input:focus {
+				border: 1px solid blue;
+				width: 300px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="input-name">
+			<label>Name:</label>
+			<input type="text" name="name" class="" value="" placeholder="Name" required/>
+		</div>
+	</body>
+</html>
