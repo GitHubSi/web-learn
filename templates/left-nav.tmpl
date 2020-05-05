@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<div class="container-fluid mt-2">
     <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar fixed-top">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar position-fixed">
             
             <div class="accordion" id="accordionExample">
                 <div class="card">
@@ -15,8 +15,11 @@
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Json转换</li>
+                                <li class="list-group-item">Json 转换</li>
                                 <li class="list-group-item">Go Demo</li>
+                                <li class="list-group-item">
+                                    <a href="/get-request">Get 请求</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -43,7 +46,17 @@
         </nav>
 
         <div role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4 tab-content" id="nav-tabContent">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        工具
+                    </h2>
+                </div>
 
+                <div class="card-body">
+                    {{ template "main-register.tmpl" . }}
+                </div>
+            </div>
         </div>
     </div>
 </div>

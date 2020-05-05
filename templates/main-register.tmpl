@@ -1,0 +1,5 @@
+{{ if eq .templateTitle "card-list.tmpl" }}
+    {{ template "card-list.tmpl"}}
+{{ else if eq .templateTitle "get-request.tmpl"}}
+    {{ template "get-request.tmpl"}}
+{{ end}}
